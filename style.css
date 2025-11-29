@@ -351,6 +351,14 @@ textarea {
     color: #28323a;
     display: flex;
     align-items: center;
+
+	min-height: 0vh;
+}
+
+.mm-section.mm-section--info {
+  position: relative;
+  width: 100%;
+  min-height: 0vh !important;
 }
 
 .mm-section-inner {
@@ -364,11 +372,15 @@ textarea {
 }
 
 
+.mm-section-col--text{
+	padding-left: 10em;
+}
 
 /* Texto izquierda */
 .mm-section-col--text h2 {
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
+	
 }
 
 .mm-section-col--text p {
@@ -439,7 +451,7 @@ textarea {
 .mm-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 10vh;
   overflow: hidden;
 }
 
@@ -448,6 +460,7 @@ textarea {
   align-items: center;
   justify-content: center;
   padding: 0;
+  min-height: 80vh !important;
   color: #ffffff;
 }
 
@@ -546,11 +559,19 @@ textarea {
 }
 
 
+.mm-section--into{
+		height: 70vh !important;
+		background-color: white;
+}
+
  .mm-section-inner2 .mm-section-col {
     display: block;
     width: fit-content;
-		height: 100vh;
-	min-width: calc(50% - 100px)
+	height: 70vh  !important;
+	min-width: calc(50% - 40px)
+}
+ .mm-section-inner2 .mm-section-col{
+	height: 70vh  !important;
 }
 
 .mm-section-col--image .mm-parallax-image{
