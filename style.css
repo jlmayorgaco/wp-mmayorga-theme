@@ -257,7 +257,7 @@ textarea {
 }
 
 .mm-site-header{
-	border-top: 5px solid #78a4dd;
+	
 }
 .mm-header-inner{
 	display: flex;
@@ -271,7 +271,9 @@ textarea {
     border-width: 0px 0px 1px 0px;
     border-color: #d6d6d6;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    margin-top: 0px
+    margin-top: 0px;
+
+	/*border-top: 5px solid #78a4dd;*/
 
 }
 .mm-logo{
@@ -719,4 +721,47 @@ textarea {
     width: 100%;
     height: 100%;
     display: block;  /* elimina espacios raros */
+}
+
+
+/* Sección mapa: pantalla completa, fondo gris oscuro */
+.mm-section--map {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: #33363a; /* gris oscuro como el footer */
+}
+
+/* Wrapper para que el mapa ocupe todo */
+.mm-map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* El iframe ocupa todo y lo “tintamos” un poco */
+.mm-map-iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    /* Look gris + azul suave */
+    filter: grayscale(40%) contrast(1.05) saturate(1.1);
+}
+
+/* Overlay muy suave azul para unificar con la marca */
+.mm-map-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(33, 150, 243, 0.12),
+        rgba(0, 0, 0, 0.22)
+    );
+    pointer-events: none; /* no bloquea click sobre el mapa */
 }
