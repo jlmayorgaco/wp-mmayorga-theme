@@ -24,7 +24,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="mm-site">
 
+	
     <header class="mm-site-header">
+		<img src="<?php echo esc_url( get_template_directory_uri() . '/img/header-gradient-top.png' ); ?>"alt="" width="100%" style="display:block">
         <div class="mm-header-inner">
             <a class="mm-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img
