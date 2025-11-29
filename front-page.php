@@ -48,7 +48,7 @@ get_header();
 
             <div class="mm-info-logo">
                 <img
-                    src="<?php echo esc_url( get_template_directory_uri() . '/img/logo-mayorga.svg' ); ?>"
+                    src="<?php echo esc_url( get_template_directory_uri() . '/img/MM_Logo.png' ); ?>"
                     alt="Mayorga Abogados"
                     loading="lazy"
                 >
